@@ -93,8 +93,11 @@ class Game {
 
         // find the longest word in valid_answers
         if (Object.keys(valid_answers).length > 0) {
-            best_length = Math.max(Object.values(valid_answers).map(a => a.length))
+            const lengths = Object.values(valid_answers).map(a => a.length)
+            best_length = Math.max(...lengths)
         }
+
+        console.log(best_length)
 
         //send messages to all players
         for (const player of this.players) {
