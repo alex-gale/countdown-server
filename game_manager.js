@@ -1,5 +1,4 @@
 const { generateLetters, feedback_answer, solve_letters } = require('./lib/countdown')
-const logger = require('./lib/logger')
 
 class Game {
     constructor(game_code) {
@@ -96,8 +95,6 @@ class Game {
             const lengths = Object.values(valid_answers).map(a => a.length)
             best_length = Math.max(...lengths)
         }
-
-        console.log(best_length)
 
         //send messages to all players
         for (const player of this.players) {

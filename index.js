@@ -4,9 +4,9 @@ const https = require('https')
 const url = require('url')
 const express = require('express')
 const http = require('http')
+const logger = require('gale-logger')
 
 const Game = require('./game_manager')
-const logger = require('./lib/logger')
 
 // game container and settings
 let games = {}
