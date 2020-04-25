@@ -1,5 +1,5 @@
-# countdown-api
-Websocket based API for countdown game
+# countdown-server
+Websocket based server for countdown online game
 
 ## Errors
 Errors will be sent with a message and an error code. Codes are displayed below, grouped in sections according to which client will receive them.
